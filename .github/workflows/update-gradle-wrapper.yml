@@ -2,7 +2,7 @@ name: Update Gradle Wrapper
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "25 0 * * *"
 
 jobs:
   update-gradle-wrapper:
@@ -13,4 +13,5 @@ jobs:
 
       - name: Update Gradle Wrapper
         uses: gradle-update/update-gradle-wrapper-action@v1
-        target-branch: 1.9.x
+        with:
+          target-branch: 1.9.x
