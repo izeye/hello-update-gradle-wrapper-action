@@ -2,7 +2,7 @@ name: Update Gradle Wrapper
 
 on:
   schedule:
-    - cron: "25 0 * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   update-gradle-wrapper:
